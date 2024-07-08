@@ -1,0 +1,6 @@
+@PRS_Server_HostAddress = http://localhost:5024
+
+GET {{PRS_Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
