@@ -8,11 +8,12 @@ public class RequestLine {
     public int Quantity { get; set; } = 1;
     
     public int RequestId { get; set; }
+    [JsonIgnore]
     public virtual Request? Request { get; set; }
 
 
     public int ProductId { get; set; }
-    [JsonIgnore]
+
     public virtual Product? Product { get; set; }
 
 }
