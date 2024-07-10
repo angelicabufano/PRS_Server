@@ -1,4 +1,6 @@
-﻿namespace PRS_Server.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace PRS_Server.Models;
 
 public class RequestLine {
 
@@ -10,6 +12,7 @@ public class RequestLine {
 
 
     public int ProductId { get; set; }
+    [JsonIgnore]
     public virtual Product? Product { get; set; }
 
 }
